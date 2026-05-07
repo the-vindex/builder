@@ -22,7 +22,10 @@ rec {
     port = 25566;
     prometheusPort = 1226;
     minecraft = "1.21.11";
-    vanilla = true;
+    vanilla = {
+      url = "https://piston-data.mojang.com/v1/objects/64bb6d763bed0a9f1d632ec347938594144943ed/server.jar";
+      sha256 = "f83b8e093865806f931c7e34aae41b177d4c076335263dd124c75d6d65dd1726";
+    };
     extraServerDirs = [
       ./base/vanilla-server
       ./base/server
